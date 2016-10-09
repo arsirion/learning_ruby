@@ -73,6 +73,27 @@ describe "sum" do
   end
 end
 
+describe "multiply" do
+  it "multiplies 3 and 4" do
+    expect(multiply(3,4)).to eq(12)
+  end
+
+  it "multiplies 10 and 10" do
+    expect (multiply(10,10)).to eq(100)
+  end
+end
+
+describe "divide" do
+  it "divides integers" do
+    expect(divide(10/5)).to eq(2)
+  end
+
+  it "divides floats" do
+    expect(divide(1.0/2.0)).to eq(0.5)
+  end
+end
+
+
 # Extra Credit Test-Driving Bonus:
 # once the above tests pass,
 # write tests and code for the following:
